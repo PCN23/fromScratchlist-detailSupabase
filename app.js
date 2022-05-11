@@ -1,7 +1,9 @@
 import { getStadiums } from './fetch-utils.js';
 
 // import functions and grab DOM elements
-console.log(getStadiums);
+//const stadiums = document.getElementById('stadiums');
+
+
 // let state
 
 // set event listeners 
