@@ -1,5 +1,7 @@
-// import functions and grab DOM elements
+import { getStadiums } from './fetch-utils.js';
 
+// import functions and grab DOM elements
+console.log(getStadiums);
 // let state
 
 // set event listeners 
