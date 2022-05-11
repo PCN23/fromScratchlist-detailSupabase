@@ -7,5 +7,5 @@ const client = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 export async function getStadiums(){
     const resp = await client.from('oregon_stadiums').select('*');
     console.log(resp);
-    return resp.data;
+
 }
