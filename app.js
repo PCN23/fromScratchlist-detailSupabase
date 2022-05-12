@@ -11,8 +11,6 @@ async function loadData(){
     const stadiums = await getStadiums();
     console.log(stadiums);
   
-
-  
     for (let stadium of stadiums) {
         const stadiumDiv = renderStadiumLi(stadium);
         stadiumLinks.append(stadiumDiv);
