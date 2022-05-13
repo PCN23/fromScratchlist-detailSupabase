@@ -12,7 +12,7 @@ export async function getStadiums(){
 }
 
 export async function getStadium(id) {
-    const response = await client.from('stadiums').select().match({ id: id }).single();
+    const response = await client.from('oregon_stadiums').select().match({ id: id }).single();
     console.log(response.data);
 
     return response.data;

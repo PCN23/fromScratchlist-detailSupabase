@@ -7,6 +7,7 @@ async function loadData(){
     const params = new URLSearchParams(window.location.search);
     const id = params.get('id');
     const stadium = await getStadium(id);
+    console.log(stadium);
     stadiumDetailContainer.append(renderStadiumDetail(stadium));
 }
 loadData();

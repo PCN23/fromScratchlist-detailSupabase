@@ -34,11 +34,15 @@ export function renderStadiumDetail(stadium) {
     const nameSpan = document.createElement('span');
     nameSpan.textContent = stadium.name;
     nameSpan.classList.add('name');
+
+    const teamName = document.createElement('p');
+    teamName.textContent = stadium.teamName;
+    teamName.classList.add('team-name');
     
     const img = document.createElement('img');
     img.src = `../assets/${stadium.name}.jpg`;
     
-    div.append(capacityEl, img, placeEl);
+    div.append(capacityEl, img, placeEl, nameSpan, teamName);
 
     return div;
     
