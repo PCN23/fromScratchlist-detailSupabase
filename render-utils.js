@@ -12,8 +12,8 @@ export function renderStadiumLi(stadium) {
 
 
     a.append(img, li);
-    div.append(a);
-    return div;
+    a.append(div);
+    return a;
 }
 
 
