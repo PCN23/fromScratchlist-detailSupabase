@@ -1,0 +1,18 @@
+.stadium-detail-container {
+    height: 10px;
+    width: 10px;
+    align-items: inherit;
+    border: 10px solid aqua;
+}
+
+.stadium-img {
+    height: 500px;
+    width: 500px;
+    align-items: inherit;
+    border: 10px solid aqua;
+}
+
+.team-name {
+    background-color: aqua;
+}
+
