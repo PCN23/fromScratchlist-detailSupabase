@@ -10,10 +10,12 @@ const stadiumLinks = document.getElementById('stadium-links');
 async function loadData(){ 
     const stadiums = await getStadiums();
     console.log(stadiums);
+    const main = document.querySelector('main');
   
     for (let stadium of stadiums) {
         const stadiumDiv = renderStadiumLi(stadium);
         stadiumLinks.append(stadiumDiv);
+        main.append(stadiumDiv);
     }
   
 }

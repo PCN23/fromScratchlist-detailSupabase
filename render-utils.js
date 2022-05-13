@@ -20,19 +20,22 @@ export function renderStadiumLi(stadium) {
 
 export function renderStadiumDetail(stadium) {
     const div = document.createElement('div');
-    const img = document.createElement('img');
-    const placeEl = document.createElement('p');
+    div.classList.add('stadium-detail');
+    
+    
     const capacityEl = document.createElement('p');
-
     capacityEl.textContent = stadium.capacity;
     capacityEl.classList.add('capacity');
-
+    
+    const placeEl = document.createElement('p');
     placeEl.textContent = stadium.place;
     placeEl.classList.add('place');
-
-
-    div.classList.add('stadium-detail');
-
+    
+    const nameSpan = document.createElement('span');
+    nameSpan.textContent = stadium.name;
+    nameSpan.classList.add('name');
+    
+    const img = document.createElement('img');
     img.src = `../assets/${stadium.name}.jpg`;
     
     div.append(capacityEl, img, placeEl);
